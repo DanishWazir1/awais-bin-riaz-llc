@@ -1,6 +1,5 @@
 {
-    "title": "Introduce your product quickly & effectively",
-    "text": "Landy comes with multi-lingual support, all of the content is stored in the JSON files, so that you can manage the texts without having any prior knowledge in developing web applications using React.js.",
-    "button": "Get started"
-  }
-  
+  "title": "Discover Our Wide Range of Bakery Products",
+  "text": "From fruit fillings and cake glazes to chocolate products and edible glitter dust, we offer a comprehensive selection of ingredients and decorations for all your baking needs. Explore our diverse range of products including cream fillings, cake decorations, and ready-made mixes. Our high-quality ingredients and innovative solutions ensure your baked goods are always delicious and visually appealing.",
+  "button": "Explore Products"
+}

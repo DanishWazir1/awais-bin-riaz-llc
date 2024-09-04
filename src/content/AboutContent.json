@@ -1,16 +1,21 @@
 {
-  "title": "Light, fast & responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
+  "title": "About Us",
+  "text": "Welcome to Awais Bin Riaz LLC, where our passion for premium quality meets unparalleled service. We are dedicated to supplying top-tier bakery and pastry ingredients, ensuring that every product we offer meets the highest standards of excellence.",
   "section": [
     {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
-      "icon": "notes.svg"
+      "title": "Our Mission",
+      "content": "To anticipate, identify, and fulfill the needs of our clients by providing exceptional ingredients sourced from renowned suppliers around the globe. We believe in fostering long-term relationships built on trust, quality, and reliability.",
+      "icon": "mission.svg"
     },
     {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
-      "icon": "notes.svg"
+      "title": "Our Commitment",
+      "content": "Delivering premium ingredients that elevate the culinary creations of our clients. Ensuring timely, door-to-door delivery within 24 hours of placing your order. Offering competitive prices without compromising on quality.",
+      "icon": "commitment.svg"
+    },
+    {
+      "title": "Global Sourcing",
+      "content": "Our global sourcing network includes premium products from the UAE, USA, Singapore, Italy, Belgium, and KSA, ensuring that our clients have access to the finest ingredients available.",
+      "icon": "global.svg"
     }
   ]
 }

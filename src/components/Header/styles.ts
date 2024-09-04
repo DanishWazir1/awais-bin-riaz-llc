@@ -12,7 +12,13 @@ export const HeaderSection = styled("header")`
 `;
 
 export const LogoContainer = styled(Link)`
-  display: flex;
+   display: flex;
+  font-size: 2rem;
+  font-weight: 900; 
+  color: #18216d;   
+  text-decoration: none; 
+  transition: color 0.2s ease-in;
+
 `;
 
 export const NavLink = styled("div")`

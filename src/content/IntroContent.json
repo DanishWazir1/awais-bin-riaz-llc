@@ -1,12 +1,12 @@
 {
-  "title": "Landing page template for developers & startups",
-  "text": "Beautifully designed templates using React.js, ant design and styled-components! Save weeks of time and build your landing page in minutes.",
+  "title": "Welcome to Awais Bin Riaz LLC",
+  "text": "Delivering premium bakery and pastry ingredients sourced from around the world. Our commitment is to provide the best quality at competitive prices, ensuring satisfaction with every order.",
   "button": [
     {
-      "title": "Explore"
+      "title": "Order Now"
     },
     {
-      "title": "Learn more",
+      "title": "Learn More",
       "color": "#fff"
     }
   ]
