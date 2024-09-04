@@ -20,6 +20,7 @@ import {
   LanguageSwitch,
   LanguageSwitchContainer,
 } from "./styles";
+import { Span } from "../Header/styles";
 
 interface SocialLinkProps {
   href: string;
@@ -56,7 +57,7 @@ const Footer = ({ t }: { t: TFunction }) => {
               <Para>
                 {t(`Do you have any question? Feel free to reach out.`)}
               </Para>
-              <a href="mailto:l.qqbadze@gmail.com">
+              <a href="mailto:sales@abrfoodstuff.ae">
                 <Chat>{t(`Let's Chat`)}</Chat>
               </a>
             </Col>
@@ -75,9 +76,7 @@ const Footer = ({ t }: { t: TFunction }) => {
             <Col lg={10} md={10} sm={12} xs={12}>
               <Empty />
               <Language>{t("Address")}</Language>
-              <Para>Rancho Santa Margarita</Para>
-              <Para>2131 Elk Street</Para>
-              <Para>California</Para>
+              <Para>Dubai</Para>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Company")}</Title>
@@ -111,54 +110,44 @@ const Footer = ({ t }: { t: TFunction }) => {
         </Container>
       </FooterSection>
       <Extra>
-        <Container border={true}>
-          <Row
-            justify="space-between"
-            align="middle"
-            style={{ paddingTop: "3rem" }}
-          >
-            <NavLink to="/">
-              <LogoContainer>
-                <SvgIcon
-                  src="logo.svg"
-                  aria-label="homepage"
-                  width="101px"
-                  height="64px"
-                />
-              </LogoContainer>
-            </NavLink>
-            <FooterContainer>
-              <SocialLink
-                href="https://github.com/Adrinlol/create-react-app-adrinlol"
-                src="github.svg"
-              />
-              <SocialLink
-                href="https://twitter.com/Adrinlolx"
-                src="twitter.svg"
-              />
-              <SocialLink
-                href="https://www.linkedin.com/in/lasha-kakabadze/"
-                src="linkedin.svg"
-              />
-              <SocialLink
-                href="https://medium.com/@lashakakabadze/"
-                src="medium.svg"
-              />
-              <a
-                href="https://ko-fi.com/Y8Y7H8BNJ"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  height="36"
-                  style={{ border: 0, height: 36 }}
-                  src="https://storage.ko-fi.com/cdn/kofi3.png?v=3"
-                  alt="Buy Me a Coffee at ko-fi.com"
-                />
-              </a>
-            </FooterContainer>
-          </Row>
-        </Container>
+      <Container border={true}>
+  <Row
+    justify="space-between" // Use space-between to push the elements to the corners
+    align="middle"
+    style={{ paddingTop: "3rem" }}
+  >
+    <Col>
+      <NavLink to="/">
+        <LogoContainer>
+          <Span>Awais Bin Riaz LLC</Span>
+        </LogoContainer>
+      </NavLink>
+    </Col>
+    <Col>
+      <FooterContainer>
+      <Col>
+        <SocialLink
+          href="https://www.facebook.com/share/PLWL9JrkEfKcRfrD/?mibextid=qi2Omg"
+          src="github.svg"
+        />
+      </Col>
+      <Col>
+        <SocialLink
+          href="https://wa.me/message/IXPL7UBIKUSCN1"
+          src="twitter.svg"
+        />
+      </Col>
+      <Col>
+        <SocialLink
+          href="https://www.instagram.com/abr.foodstuff?utm_source=qr&igsh=ZmVkNmdlODhqdjk="
+          src="linkedin.svg"
+        />
+      </Col>
+      </FooterContainer>
+    </Col>
+  </Row>
+</Container>
+
       </Extra>
     </>
   );

@@ -109,4 +109,12 @@ export const Styles = createGlobalStyle`
     .ant-drawer-content-wrapper {
         width: 300px !important;
     }
+    /* Custom styles for the Carousel dots */
+  .custom-dot .slick-dots li {
+    background: black; 
+  }
+
+  .custom-dot .slick-dots li.slick-active {
+    background: white; 
+  }
 `;

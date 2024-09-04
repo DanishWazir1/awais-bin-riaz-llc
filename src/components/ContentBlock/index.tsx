@@ -116,6 +116,7 @@ const ContentBlock = ({
           speed={500}
           dots
           dotPosition="bottom"
+          className="custom-dot"
         >
           {selectedProduct && getProductImages(selectedProduct).map((imagePath: string, index: number) => (
             <div key={index}>
@@ -124,8 +125,8 @@ const ContentBlock = ({
                 alt={`${selectedProduct} ${index + 1}`}
                 style={{
                   width: "100%",
-                  maxWidth: "600px",
-                  maxHeight: "400px",
+                  maxWidth: "700px",
+                  maxHeight: "600px",
                   margin: "0 auto",
                   display: "block",
                 }}
