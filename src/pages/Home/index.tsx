@@ -5,17 +5,22 @@ import AboutContent from "../../content/AboutContent.json";
 import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
+import { collageImages } from "../../utils/collageImages"; 
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
+const ProductSlider = lazy(() => import("../../components/ProductSlider")); 
 
 const Home = () => {
   return (
     <Container>
       <ScrollToTop />
+      <section style={{ marginBottom: '50px' }}>
+        <ProductSlider products={collageImages} />
+      </section>
       <ContentBlock
         direction="right"
         title={IntroContent.title}
@@ -62,7 +67,7 @@ const Home = () => {
           width="100%"
           height="450"
           style={{ border: 0 }}
-          allowFullScreen = {true}
+          allowFullScreen={true}
           loading="lazy"
         ></iframe>
       </div>
