@@ -1,4 +1,4 @@
-import { lazy } from "react";
+import React, { lazy } from "react";
 import IntroContent from "../../content/IntroContent.json";
 import MiddleBlockContent from "../../content/MiddleBlockContent.json";
 import AboutContent from "../../content/AboutContent.json";
@@ -18,9 +18,9 @@ const Home = () => {
   return (
     <Container>
       <ScrollToTop />
-      <section style={{ marginBottom: '50px' }}>
-        <ProductSlider products={collageImages} />
-      </section>
+      {/* ProductSlider placed before the first ContentBlock */}
+      <ProductSlider products={collageImages} />
+      
       <ContentBlock
         direction="right"
         title={IntroContent.title}
@@ -29,11 +29,13 @@ const Home = () => {
         icon="developer.svg"
         id="intro"
       />
+      
       <MiddleBlock
         title={MiddleBlockContent.title}
         content={MiddleBlockContent.text}
         button={MiddleBlockContent.button}
       />
+      
       <ContentBlock
         direction="left"
         title={AboutContent.title}
@@ -41,6 +43,7 @@ const Home = () => {
         section={AboutContent.section}
         id="about"
       />
+      
       <ContentBlock
         direction="right"
         title={MissionContent.title}
@@ -48,6 +51,7 @@ const Home = () => {
         icon="product-launch.svg"
         id="mission"
       />
+      
       <ContentBlock
         direction="left"
         title={ProductContent.title}
@@ -55,11 +59,13 @@ const Home = () => {
         icon="waving.svg"
         id="product"
       />
+      
       <Contact
         title={ContactContent.title}
         content={ContactContent.text}
         id="contact"
       />
+      
       <div style={{ marginTop: "2rem" }}>
         <iframe
           title="Google Map"

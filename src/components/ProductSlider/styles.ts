@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const SliderWrapper = styled.div`
   width: 100%;
-  height: 50px; /* Adjusted height for better visibility */
-  margin-bottom: 50px; /* Spacing before the intro section */
+  height: auto; /* Adjust height dynamically based on content */
+  margin-bottom: 50px; /* Adds spacing before the next section */
   position: relative;
-  z-index: 1; /* Ensure it is above other content */
+  z-index: 1;
 
   .ant-carousel .slick-slide {
     position: relative;
@@ -13,8 +13,8 @@ export const SliderWrapper = styled.div`
 
   img {
     width: 100%;
-    height: 50%;
-    object-fit: cover; /* Ensures the image covers the container */
+    height: auto; /* Adjusts image height to maintain aspect ratio */
+    object-fit: cover; /* Ensures image covers the container proportionally */
   }
 `;
 

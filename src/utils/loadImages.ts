@@ -75,3 +75,4 @@ export const getProductImages = (productName: string): string[] => {
 
   return imagePaths[productName] || [];
 };
+
