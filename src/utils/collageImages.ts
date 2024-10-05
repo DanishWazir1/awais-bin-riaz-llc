@@ -1,8 +1,9 @@
 export const collageImages = [
     {
-      image: "/img/collages/collage1.jpg",
-      description: "Bakery Ingredients, Beverage powder mix, and more",
+      image: "/img/collages/collage 5.jpg",
+      description: "Miscellaneous Products",
     },
+    
     {
       image: "/img/collages/collage 2.jpg",
       description: "Chocolate Product, Dairy Product, and more",
@@ -18,6 +19,10 @@ export const collageImages = [
     {
       image: "/img/collages/collage 5.jpg",
       description: "Miscellaneous Products",
+    },
+    {
+      image: "/img/collages/collage1.jpg",
+      description: "Bakery Ingredients, Beverage powder mix, and more",
     },
   ];
   

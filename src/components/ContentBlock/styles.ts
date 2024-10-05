@@ -63,68 +63,44 @@ export const ServiceWrapper = styled("div")`
   }
 `;
 
+export const ProductBox = styled("div")`
+  border: 2px solid #eee;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Default text color */
+  background-color: #000; /* Default background color */
+  background-image: none; /* Ensure no image is set by default */
+
+  &:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-color: #333; 
+    opacity: 0.5;
+  }
+`;
+
+
+
 export const MinTitle = styled("h6")`
-  font-size: 15px;
-  line-height: 1rem;
+  font-size: 16px;
+  line-height: 1.2rem;
   padding: 0.5rem 0;
   text-transform: uppercase;
-  color: #000;
+  color: #000; /* Default text color */
+
+  ${ProductBox}:hover & {
+  background-color: #000000;
+    color: #fff; /* Change text color to white when ProductBox is hovered */
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
   font-family: "Motiva Sans Light", sans-serif;
-`;
-
-export const MinPara = styled("p")`
-  font-size: 13px;
-  color: #666;
-  line-height: 1.4;
-  margin-top: 0.5rem;
-
-  @media only screen and (max-width: 575px) {
-    font-size: 12px;
-  }
-`;
-
-export const ButtonWrapper = styled("div")`
-  display: flex;
-  justify-content: space-between;
-  max-width: 100%;
-  margin-top: 2rem;
-
-  @media screen and (min-width: 1024px) {
-    max-width: 80%;
-  }
-
-  @media only screen and (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-
-    button {
-      width: 100%;
-      margin-bottom: 1rem;
-    }
-
-    button:last-child {
-      margin-left: 0;
-      margin-bottom: 0;
-    }
-  }
-
-  button:last-child {
-    margin-left: 20px;
-
-    @media only screen and (max-width: 768px) {
-      margin-left: 0;
-    }
-  }
-`;
-
-// Custom styles for the carousel dots
-export const CustomDot = styled.div`
-  .slick-dots li button {
-    background-color: black; /* Set dot color to black */
-    opacity: 1; /* Ensure dots are fully opaque */
-  }
-
-  .slick-dots li.slick-active button {
-    background-color: #000; /* Keep active dot color black */
-  }
 `;

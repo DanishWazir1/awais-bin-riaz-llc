@@ -1,58 +1,58 @@
 export const getProductImages = (productName: string): string[] => {
   const imagePaths: { [key: string]: string[] } = {
-    "Bakery Ingredients": [
-      "/img/products/Bakery Ingredients/image1.jpeg",
-      "/img/products/Bakery Ingredients/image2.jpeg",
-      "/img/products/Bakery Ingredients/image3.jpeg",
-      "/img/products/Bakery Ingredients/image4.jpeg",
+    "Bakery": [
+      "/img/products/Bakery/image1.jpeg",
+      "/img/products/Bakery/image2.jpeg",
+      "/img/products/Bakery/image3.jpeg",
+      "/img/products/Bakery/image4.jpeg",
     ],
-    "Beverage powder mix": [
-      "/img/products/Beverage powder mix/Beverage powder mix.jpeg",
+    "Beverage": [
+      "/img/products/Beverage/Beverage.jpeg",
     ],
-    "Cake Decoration": [
-      "/img/products/Cake Decoration/Cake Decoration.jpeg",
+    "Cake": [
+      "/img/products/Cake/Cake.jpeg",
     ],
-    "Cake Glazes": [
-      "/img/products/Cake Glazes/Cake Glazes.jpeg",
-      "/img/products/Cake Glazes/Cake Glazes 2.jpeg",
+    "Cakes": [
+      "/img/products/Cakes/CakeGlazes.jpeg",
+      "/img/products/Cakes/CakeGlazes2.jpeg",
     ],
-    "Cheese Product": [
-      "/img/products/Cheese Product/Cheese Product.jpeg",
+    "Cheese": [
+      "/img/products/Cheese/Cheese.jpeg",
     ],
-    "Chocolate Product": [
-      "/img/products/Chocolate Product/Chocolate Products.jpeg",
-      "/img/products/Chocolate Product/Chocolate Products 2.jpeg",
+    "Chocolate": [
+      "/img/products/Chocolate/Chocolate.jpeg",
+      "/img/products/Chocolate/ChocolateProducts.jpeg",
     ],
-    "Dairy Product": [
-      "/img/products/Chocolate Product/Dairy Product.jpeg",
-      "/img/products/Chocolate Product/Dairy Product 2.jpeg",
+    "Dairy": [
+      "/img/products/Dairy/Dairy.jpeg",
+      "/img/products/Dairy/DairyProduct.jpeg",
     ],
-    "Edible Products": [
-      "/img/products/Edible Products/Edible glitter dust.jpeg",
-      "/img/products/Edible Products/Edible printing.jpeg",
+    "Edible": [
+      "/img/products/Edible/Edible.jpeg",
+      "/img/products/Edible/Edibleprinting.jpeg",
     ],
     "Fillings": [
       "/img/products/Fillings/Fillings.jpeg",
       "/img/products/Fillings/Fruit fillings.jpeg",
     ],
-    "Flavored Spray": [
-      "/img/products/Flavored Spray/Flavored Sprays.jpeg",
-      "/img/products/Flavored Spray/Flavored Syrup 2.jpeg",
-      "/img/products/Flavored Spray/Flavored Syrup 3.jpeg",
-      "/img/products/Flavored Spray/Metallic Spray.jpeg",
+    "Flavored": [
+      "/img/products/Flavored/Flavoured.jpeg",
+      "/img/products/Flavored/FlavouredSyrup2.jpeg",
+      "/img/products/Flavored/FlavouredSyrup3.jpeg",
+      "/img/products/Flavored/MetallicSpray.jpeg",
     ],
     "Flour": [
-      "/img/products/Bakery Powder Mixe/Bakery Powder Mixe.jpeg",
+      "/img/products/Flour/Flours.jpeg",
     ],
     "Paste": [
-      "/img/products/Paste/Flow paste.jpeg",
-      "/img/products/Paste/Sugar paste.jpeg",
+      "/img/products/Paste/paste.jpeg",
+      "/img/products/Paste/Sugarpaste.jpeg",
     ],
     "Fruits": [
       "/img/products/Fruits/Fruits.jpeg",
     ],
-    "Gold Silver Collection": [
-      "/img/products/Gold Silver Collection/Gold Silver Collection.jpeg",
+    "GoldSilver": [
+      "/img/products/GoldSilver/Gold.jpeg",
     ],
     "Nuts": [
       "/img/products/Nuts/Nuts.jpeg",
@@ -60,15 +60,15 @@ export const getProductImages = (productName: string): string[] => {
     "Puree": [
       "/img/products/Puree/Puree.jpeg",
     ],
-    "Ready Made Mixes": [
-      "/img/products/Ready Made Mixes/Ready Made Mixes.jpeg",
-      "/img/products/Ready Made Mixes/Ready Made Mixes 2.jpeg",
+    "ReadyMadeMixes": [
+      "/img/products/ReadyMadeMixes/Ready.jpeg",
+      "/img/products/ReadyMadeMixes/ReadyMadeMixes.jpeg",
     ],
     "Toppings": [
       "/img/products/Toppings/Toppings.jpeg",
     ],
-    "Non food items": [
-      "/img/products/Non food items/Non food items.jpeg",
+    "Nonfooditems": [
+      "/img/products/Nonfooditems/Non.jpeg",
     ],
     // Add other products and their images here
   };
