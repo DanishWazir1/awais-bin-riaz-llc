@@ -26,7 +26,7 @@ const ContentBlock = ({
 }: ContentBlockProps) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
-  const [productImages, setProductImages] = useState<string[]>([]); // State for product images
+  const [productImages, setProductImages] = useState<string[]>([]); 
 
   const products = [
     "Bakery",
@@ -52,27 +52,26 @@ const ContentBlock = ({
 
   const openProductModal = (productName: string) => {
     const images = getProductImages(productName);
-    console.log("Product Images for:", productName, images); // Debugging line
     setSelectedProduct(productName);
-    setProductImages(images); // Store images in the state
+    setProductImages(images);
     setIsModalVisible(true);
   };
 
   const closeModal = () => {
     setIsModalVisible(false);
     setSelectedProduct(null);
-    setProductImages([]); // Reset images when modal is closed
+    setProductImages([]);
   };
 
   return (
     <ContentSection>
-      <Fade direction={direction} triggerOnce>
-        <StyledRow justify="space-between" align="middle" id={id} direction={direction}>
-          {id === "about" && (
-            <Col lg={10} md={10} sm={10} xs={23}>
-              <img src="img/about/About.jpg" alt="About Section" width="100%" />
-            </Col>
-          )}
+      <Fade direction={direction === "center" ? "up" : direction} triggerOnce>
+        <StyledRow
+          justify={direction === "center" ? "center" : "space-between"} 
+          align="middle"
+          id={id}
+          direction={direction}
+        >
           {icon && (
             <Col lg={10} md={10} sm={10} xs={18}>
               <SvgIcon src={icon} width="100%" height="100%" />
@@ -87,7 +86,7 @@ const ContentBlock = ({
                   <Row gutter={[24, 24]} justify="start">
                     {products.map((product, index) => {
                       const productImages = getProductImages(product);
-                      const firstImage = productImages.length > 0 ? productImages[0] : '/path/to/default/image.jpeg'; // Fallback image
+                      const firstImage = productImages.length > 0 ? productImages[0] : '/path/to/default/image.jpeg';
 
                       return (
                         <Col key={index} lg={8} md={12} sm={12} xs={24}>

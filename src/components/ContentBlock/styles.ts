@@ -73,9 +73,9 @@ export const ProductBox = styled("div")`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff; /* Default text color */
-  background-color: #000; /* Default background color */
-  background-image: none; /* Ensure no image is set by default */
+  color: #fff; 
+  background-color: #000; 
+  background-image: none; 
 
   &:hover {
     transform: translateY(-10px); 
@@ -92,11 +92,11 @@ export const MinTitle = styled("h6")`
   line-height: 1.2rem;
   padding: 0.5rem 0;
   text-transform: uppercase;
-  color: #000; /* Default text color */
+  color: #000; 
 
   ${ProductBox}:hover & {
   background-color: #000000;
-    color: #fff; /* Change text color to white when ProductBox is hovered */
+    color: #fff;
     font-size: 20px;
     font-weight: bold;
 

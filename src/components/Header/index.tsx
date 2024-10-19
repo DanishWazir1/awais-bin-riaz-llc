@@ -42,12 +42,14 @@ const Header = ({ t }: { t: TFunction }) => {
         <CustomNavLinkSmall onClick={() => scrollTo("product")}>
           <Span>{t("Product")}</Span>
         </CustomNavLinkSmall>
+        {/*  <CustomNavLinkSmall onClick={() => scrollTo("contact")}>
+          <Span>{t("Contact")}</Span>
+        </CustomNavLinkSmall> */}
         <CustomNavLinkSmall
           style={{ width: "180px" }}
-          onClick={() => scrollTo("contact")}
         >
           <Span>
-            <Button>{t("Contact")}</Button>
+            <Button>{t("Home")}</Button>
           </Span>
         </CustomNavLinkSmall>
       </>
@@ -59,8 +61,7 @@ const Header = ({ t }: { t: TFunction }) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            {/* <SvgIcon src="logo.svg" width="101px" height="64px" /> */}
-             <Span>Awais Bin Riaz LLC</Span>
+             <Span>Abr Food Stuff</Span>
           </LogoContainer>
           <NotHidden>
             <MenuItem />

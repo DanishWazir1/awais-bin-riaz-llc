@@ -75,7 +75,7 @@ const Footer = ({ t }: { t: TFunction }) => {
     <Col>
       <NavLink to="/">
         <LogoContainer>
-          <Span>Awais Bin Riaz LLC</Span>
+          <Span>Abr Food Stuff</Span>
         </LogoContainer>
       </NavLink>
     </Col>

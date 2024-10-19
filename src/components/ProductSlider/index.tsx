@@ -2,7 +2,6 @@ import React from "react";
 import { Carousel, Col } from "antd";
 import { SliderWrapper, Description, SliderContainer } from "./styles";
 import { CollageImage } from "./types";
-import { SvgIcon } from "../../common/SvgIcon";
 
 interface ProductSliderProps {
   products: CollageImage[];
@@ -23,7 +22,7 @@ const ProductSlider: React.FC<ProductSliderProps> = ({ products }) => {
         key={src}
         aria-label={src}
       >
-        <SvgIcon src={src} width="25px" height="25px" />
+        <img src={src} alt="WhatsApp" width="50px" height="50px" />
       </a>
     );
   };
@@ -35,27 +34,27 @@ const ProductSlider: React.FC<ProductSliderProps> = ({ products }) => {
           <div
             key={index}
             style={{
-              backgroundColor: 'white', // Ensure the background is set to white
+              backgroundColor: 'white',
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
               alignItems: 'center',
-              height: '800px', // Fixed height for better visibility
+              height: '800px', 
               padding: '20px',
-              position: 'relative', // Ensure that this div is the reference for child positioning
+              position: 'relative', 
             }}
           >
             <div
               style={{
-                backgroundColor: 'white', // Ensure the inner div also has a white background
+                backgroundColor: 'white', 
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                flex: 1, // Take up the remaining space
+                flex: 1, 
                 width: '100%',
                 overflow: 'hidden',
-                position: 'relative', // Ensure proper stacking context
-                zIndex: 1, // Place it above other elements
+                position: 'relative', 
+                zIndex: 1,
               }}
             >
               <img
@@ -65,28 +64,16 @@ const ProductSlider: React.FC<ProductSliderProps> = ({ products }) => {
                   maxWidth: '100%',
                   height: 'auto',
                   objectFit: 'contain',
-                  backgroundColor: 'white', // Image background to avoid black background
-                }} // Maintain aspect ratio
+                  backgroundColor: 'white', 
+                }} 
               />
             </div>
             <Description>{product.description}</Description>
             <SliderContainer>
               <Col>
                 <SocialLink
-                  href="https://www.facebook.com/share/PLWL9JrkEfKcRfrD/?mibextid=qi2Omg"
-                  src="github.svg"
-                />
-              </Col>
-              <Col>
-                <SocialLink
                   href="https://wa.me/message/IXPL7UBIKUSCN1"
-                  src="twitter.svg"
-                />
-              </Col>
-              <Col>
-                <SocialLink
-                  href="https://www.instagram.com/abr.foodstuff?utm_source=qr&igsh=ZmVkNmdlODhqdjk="
-                  src="linkedin.svg"
+                  src="/img/whatsapp/whatsapp-icon.jpg"
                 />
               </Col>
             </SliderContainer>

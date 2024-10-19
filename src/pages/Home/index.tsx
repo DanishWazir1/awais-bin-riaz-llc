@@ -35,7 +35,7 @@ const Home = () => {
         button={MiddleBlockContent.button}
       />
       <ContentBlock
-        direction="left"
+        direction="center"
         title={AboutContent.title}
         content={AboutContent.text}
         section={AboutContent.section}
@@ -50,23 +50,22 @@ const Home = () => {
         id="mission"
       />
       <ContentBlock
-        direction="left"
+        direction="center"
         title={ProductContent.title}
         content={ProductContent.text}
-        icon="waving.svg"
         id="product"
       />
 
-      <Contact
+      {/* <Contact
         title={ContactContent.title}
         content={ContactContent.text}
         id="contact"
-      />
+      /> */}
 
       <div style={{ marginTop: "2rem" }}>
         <iframe
           title="Google Map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115609.34505077867!2d55.1713426!3d25.0657003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f434d1f8b8f63%3A0x4fe83f1e1a3b1e7c!2sDubai!5e0!3m2!1sen!2sae!4v1616582409470!5m2!1sen!2sae"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.9922992732563!2d55.2339049!3d25.135951199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f697b03440af1%3A0x9f7af482cb7cf519!2sWarehouse%20%23%207%20Street%20%23%2024B%2C%20Al%20Marabea%20Road%20-%20Al%20Quoz%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1729347897725!5m2!1sen!2s"
           width="100%"
           height="450"
           style={{ border: 0 }}
