@@ -23,8 +23,8 @@ export const Description = styled.div`
   bottom: 100px; 
   left: 20px;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjusting opacity to 0.5 */
+  padding: 20px 30px; /* Adding horizontal padding */
   border-radius: 8px;
   font-size: 20px; 
   font-weight: bold; 
@@ -60,10 +60,14 @@ export const SliderContainer = styled.div`
   }
 
   img {
-    width: 50px;
-    height: 50px;
-    fill: white; 
-    margin-top: 50px;
-    margin-left: 30px;
-  }
+  width: 180px;
+  height: 70px;
+  border: none; 
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-left: 120px;
+  transition: background-color 0.3s ease; 
+}
+
+
 `;

@@ -22,7 +22,7 @@ const ProductSlider: React.FC<ProductSliderProps> = ({ products }) => {
         key={src}
         aria-label={src}
       >
-        <img src={src} alt="WhatsApp" width="50px" height="50px" />
+        <img src={src} alt="WhatsApp" width="100px" height="100px" />
       </a>
     );
   };
@@ -73,7 +73,7 @@ const ProductSlider: React.FC<ProductSliderProps> = ({ products }) => {
               <Col>
                 <SocialLink
                   href="https://wa.me/message/IXPL7UBIKUSCN1"
-                  src="/img/whatsapp/whatsapp-icon.jpg"
+                  src="/img/whatsappbanner/order-now.webp"
                 />
               </Col>
             </SliderContainer>

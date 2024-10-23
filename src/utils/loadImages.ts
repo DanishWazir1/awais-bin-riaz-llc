@@ -62,7 +62,7 @@ export const getProductImages = (productName: string): string[] => {
     ],
     "ReadyMadeMixes": [
       "/img/products/ReadyMadeMixes/Ready.jpeg",
-      "/img/products/ReadyMadeMixes/ReadyMadeMixes.jpeg",
+      "/img/products/ReadyMadeMixes/ReadyMadeMixes2.jpeg",
     ],
     "Toppings": [
       "/img/products/Toppings/Toppings.jpeg",

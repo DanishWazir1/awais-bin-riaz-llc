@@ -37,7 +37,7 @@ const Footer = ({ t }: { t: TFunction }) => {
         key={src}
         aria-label={src}
       >
-        <SvgIcon src={src} width="25px" height="25px" />
+        <img src={src}  />
       </a>
     );
   };
@@ -60,7 +60,7 @@ const Footer = ({ t }: { t: TFunction }) => {
             <Col lg={10} md={10} sm={12} xs={12}>
               <Empty />
               <Language>{t("Address")}</Language>
-              <Para>Dubai</Para>
+              <Para>Warehouse#7, Al-Quoz Industrial Area, Dubai</Para>
             </Col>
           </Row>
         </Container>
@@ -75,7 +75,7 @@ const Footer = ({ t }: { t: TFunction }) => {
     <Col>
       <NavLink to="/">
         <LogoContainer>
-          <Span>Abr Food Stuff</Span>
+          <Span><img src="/img/logo/logo.jpeg" width={70} height={70}></img></Span>
         </LogoContainer>
       </NavLink>
     </Col>
@@ -84,19 +84,19 @@ const Footer = ({ t }: { t: TFunction }) => {
       <Col>
         <SocialLink
           href="https://www.facebook.com/share/PLWL9JrkEfKcRfrD/?mibextid=qi2Omg"
-          src="github.svg"
+          src="/img/facebook/facebook.jpg"
         />
       </Col>
       <Col>
-        <SocialLink
-          href="https://wa.me/message/IXPL7UBIKUSCN1"
-          src="twitter.svg"
-        />
+      <SocialLink
+        href="https://wa.me/message/IXPL7UBIKUSCN1"
+        src="/img/whatsapp/whatsapp-icon.jpg"
+       />
       </Col>
       <Col>
         <SocialLink
           href="https://www.instagram.com/abr.foodstuff?utm_source=qr&igsh=ZmVkNmdlODhqdjk="
-          src="linkedin.svg"
+          src="/img/instagram/instagram.jpg"
         />
       </Col>
       </FooterContainer>

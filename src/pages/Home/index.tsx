@@ -18,7 +18,9 @@ const Home = () => {
   return (
     <Container>
       <ScrollToTop />
-      <ProductSlider products={collageImages} />
+      <ProductSlider 
+      products={collageImages} 
+      />
 
       <ContentBlock
         direction="right"
@@ -56,11 +58,11 @@ const Home = () => {
         id="product"
       />
 
-      {/* <Contact
+      <Contact
         title={ContactContent.title}
         content={ContactContent.text}
         id="contact"
-      /> */}
+      /> 
 
       <div style={{ marginTop: "2rem" }}>
         <iframe

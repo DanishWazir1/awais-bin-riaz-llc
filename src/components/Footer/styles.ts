@@ -124,6 +124,15 @@ export const FooterContainer = styled("div")`
       fill: rgb(255, 130, 92);
     }
   }
+  
+  img {
+    width: 30px;
+    height: 30px;
+    fill: white; 
+    margin-bottom: 50px;
+    margin-left: 30px;
+
+  }
 `;
 
 export const Language = styled("h4")`

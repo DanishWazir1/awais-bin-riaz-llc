@@ -8,29 +8,24 @@ export const ContactContainer = styled("div")`
   }
 `;
 
-export const FormGroup = styled("form")`
-  width: 100%;
-  max-width: 520px;
-
-  @media only screen and (max-width: 1045px) {
-    max-width: 100%;
-    margin-top: 2rem;
-  }
+export const InfoContainer = styled("div")`
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+  line-height: 1.5;
 `;
 
-export const Span = styled("span")`
-  display: block;
-  font-weight: 600;
-  color: rgb(255, 130, 92);
-  height: 0.775rem;
-  padding: 0 0.675rem;
+export const InfoLabelCol = styled("div")`
+  font-weight: bold;
+  color: #18216d;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 `;
 
-export const ButtonContainer = styled("div")`
-  text-align: end;
-  position: relative;
-
-  @media only screen and (max-width: 414px) {
-    padding-top: 0.75rem;
-  }
+export const InfoValueCol = styled("div")`
+  color: #18216d;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 `;

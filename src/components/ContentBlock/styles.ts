@@ -92,15 +92,17 @@ export const MinTitle = styled("h6")`
   line-height: 1.2rem;
   padding: 0.5rem 0;
   text-transform: uppercase;
-  color: #000; 
+  color: #fff; 
+  background-color: rgba(0, 0, 0, 0.6); 
+  padding: 10px; 
 
   ${ProductBox}:hover & {
-  background-color: #000000;
+    background-color: #000000;
     color: #fff;
     font-size: 20px;
     font-weight: bold;
-
   }
 
   font-family: "Motiva Sans Light", sans-serif;
 `;
+
