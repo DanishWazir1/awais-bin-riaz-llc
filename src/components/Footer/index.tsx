@@ -60,7 +60,7 @@ const Footer = ({ t }: { t: TFunction }) => {
             <Col lg={10} md={10} sm={12} xs={12}>
               <Empty />
               <Language>{t("Address")}</Language>
-              <Para>Warehouse#7, Al-Quoz Industrial Area, Dubai</Para>
+              <Para>Warehouse# 7 Street# 24B, Al-Quoz Industrial Area, Dubai</Para>
             </Col>
           </Row>
         </Container>

@@ -34,7 +34,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                     <div>sales@abrfoodstuff.ae</div>
                     <div>0522841328</div>
                     <div>0567828849</div>
-                    <div>Warehouse#7, Al-Quoz Industrial Area, Dubai</div>
+                    <div>Warehouse# 7 Street# 24B, Al-Quoz Industrial Area, Dubai</div>
                   </InfoValueCol>
                 </Col>
               </Row>

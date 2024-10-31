@@ -60,7 +60,7 @@ const Header = ({ t }: { t: TFunction }) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-             <Span><img src="/img/logo/logo.jpeg" width={150} height={150}></img></Span>
+             <Span><img src="/img/logo/logo.jpeg" width={75} height={75}></img></Span>
           </LogoContainer>
           <NotHidden>
             <MenuItem />
